@@ -4,7 +4,7 @@
 </h2>
 
 <h3 align="center">
-    <a href="https://picture-sliderr.netlify.app/" target="_blank">Life Demo</a>
+    <a href="https://double-slider.netlify.app/" target="_blank">Life Demo</a>
 </h3>
 
 

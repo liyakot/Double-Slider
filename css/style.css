@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.sidebar>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.sidebar p {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-slide>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.controls {
+    position: absolute;
+    border: none;
+    left: 35%;
+    margin-left: -50px;
+    top: 45%;
+}
+
+button {
+    cursor: pointer;
+    color: rgb(49, 49, 49);
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(226, 226, 226);
+    width: 50px;
+    height: 50px;
+}
+
+button:hover {
+    transition: 0.7s;
+    color: rgb(245, 245, 245);
+    background-color: rgb(78, 78, 78);
+    border: 1px solid rgb(78, 78, 78);
+}
+
+.down-button {
+    transform: translateY(50px);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.up-button {
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(-5px);
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .sidebar {
+        min-width: 100%;
+        width: 400vw;
+        height: 25%;
+        display: flex;
+    }
+
+    .main-slide {
+        height: 75%;
+        bottom: 0;
+        top: 25%;
+        left: 0;
+        width: 400vw;
+        display: flex;
+    }
+
+    .controls {
+        left: 44%;
+        top: calc(22% - 1px);
+        transform: rotate(-90deg)
+    }
+}
+
+@media screen and (max-width: 410px) {
+    html {
+        font-size: 12px
+    }
+}

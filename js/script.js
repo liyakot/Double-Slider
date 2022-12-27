@@ -5,16 +5,16 @@ const mainSlide = document.querySelector(".main-slide");
 const slidesCount = mainSlide.querySelectorAll("div").length;
 const container = document.querySelector(".container");
 
-/* for mobile: 
-up - right
-down - left */
-
 let slideActiveIndex = 0;
 let screenWidth = window.screen.width;
 
 screenWidth < 536
   ? (sidebar.style.left = `-${(slidesCount - 1) * 100}vw`)
   : (sidebar.style.top = `-${(slidesCount - 1) * 100}vh`);
+
+  /* for mobile: 
+up - right
+down - left */
 
 upBtn.addEventListener("click", () => {
   changeSlide("up");

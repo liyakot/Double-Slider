@@ -70,7 +70,7 @@ body {
     border: none;
     left: 35%;
     margin-left: -50px;
-    top: 45%;
+    top: 47%;
 }
 
 button {
@@ -98,7 +98,7 @@ button:hover {
 .up-button {
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    transform: translateX(-5px);
+    transform: translateX(-4px);
 }
 
 @media screen and (max-width: 850px) {
@@ -126,8 +126,8 @@ button:hover {
 
     .controls {
         left: 44%;
-        top: calc(22% - 1px);
-        transform: rotate(-90deg)
+        top: calc(25% - 27px);
+        transform: rotate(-90deg);
     }
 }
 
